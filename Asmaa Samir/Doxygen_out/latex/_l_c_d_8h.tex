@@ -1,0 +1,117 @@
+\hypertarget{_l_c_d_8h}{}\section{Doxegen\+\_\+working\+\_\+\+Dir/\+L\+CD.h File Reference}
+\label{_l_c_d_8h}\index{Doxegen\+\_\+working\+\_\+\+Dir/\+L\+C\+D.\+h@{Doxegen\+\_\+working\+\_\+\+Dir/\+L\+C\+D.\+h}}
+{\ttfamily \#include \char`\"{}L\+C\+D\+\_\+\+C\+O\+N\+F\+I\+G.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_l_c_d_8h_a2e149b5bcd4f4f3c2a6b69ef8ab599bd}{}\label{_l_c_d_8h_a2e149b5bcd4f4f3c2a6b69ef8ab599bd} 
+void {\bfseries L\+C\+D\+\_\+vid\+Init} (void)
+\item 
+\hypertarget{_l_c_d_8h_a32c5a2224dbf111ea2e8690850b65347}{}\label{_l_c_d_8h_a32c5a2224dbf111ea2e8690850b65347} 
+void {\bfseries L\+C\+D\+\_\+vid\+Send\+Command} (uint8 command)
+\item 
+void \hyperlink{_l_c_d_8h_aa3c0bba2c79bb1dddc3be019b4a47ef2}{L\+C\+D\+\_\+vid\+Send\+Char} (uint16 data)
+\begin{DoxyCompactList}\small\item\em print one character \end{DoxyCompactList}\item 
+void \hyperlink{_l_c_d_8h_a0d7a8c2cfb64a4ec6e20acb354ca450b}{L\+C\+D\+\_\+vid\+Goto\+XY} (uint8 x, uint8 y)
+\begin{DoxyCompactList}\small\item\em move cursor \end{DoxyCompactList}\item 
+void \hyperlink{_l_c_d_8h_a2bf3f71562ffc03900df74a12e874f61}{L\+C\+D\+\_\+vid\+Send\+String} (uint8 $\ast$string, uint8 index)
+\begin{DoxyCompactList}\small\item\em print string of character \end{DoxyCompactList}\item 
+void \hyperlink{_l_c_d_8h_af452ea4953741c1f67a5777a59d6c75c}{L\+C\+D\+\_\+vid\+Sind\+Extra\+Char} (uint8 X, uint8 Y)
+\begin{DoxyCompactList}\small\item\em print one character \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+functions that are being used in code for L\+CD
+
+Created on\+: 14/01/2022 \begin{DoxyAuthor}{Author}
+Asmaa\+Samir 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{_l_c_d_8h_a0d7a8c2cfb64a4ec6e20acb354ca450b}{}\label{_l_c_d_8h_a0d7a8c2cfb64a4ec6e20acb354ca450b} 
+\index{L\+C\+D.\+h@{L\+C\+D.\+h}!L\+C\+D\+\_\+vid\+Goto\+XY@{L\+C\+D\+\_\+vid\+Goto\+XY}}
+\index{L\+C\+D\+\_\+vid\+Goto\+XY@{L\+C\+D\+\_\+vid\+Goto\+XY}!L\+C\+D.\+h@{L\+C\+D.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+\_\+vid\+Goto\+X\+Y()}{LCD\_vidGotoXY()}}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+vid\+Goto\+XY (\begin{DoxyParamCaption}\item[{uint8}]{x,  }\item[{uint8}]{y }\end{DoxyParamCaption})}
+
+
+
+move cursor 
+
+function to go to specific row and column in lcd
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the number of row wanted to go \\
+\hline
+{\em y} & the number of column wanted to go \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Should not return 
+\end{DoxyReturn}
+\hypertarget{_l_c_d_8h_aa3c0bba2c79bb1dddc3be019b4a47ef2}{}\label{_l_c_d_8h_aa3c0bba2c79bb1dddc3be019b4a47ef2} 
+\index{L\+C\+D.\+h@{L\+C\+D.\+h}!L\+C\+D\+\_\+vid\+Send\+Char@{L\+C\+D\+\_\+vid\+Send\+Char}}
+\index{L\+C\+D\+\_\+vid\+Send\+Char@{L\+C\+D\+\_\+vid\+Send\+Char}!L\+C\+D.\+h@{L\+C\+D.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+\_\+vid\+Send\+Char()}{LCD\_vidSendChar()}}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+vid\+Send\+Char (\begin{DoxyParamCaption}\item[{uint16}]{data }\end{DoxyParamCaption})}
+
+
+
+print one character 
+
+function to send character to the lcd to show it by specific steps as in data sheet
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & the character to print \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Should not return 
+\end{DoxyReturn}
+\hypertarget{_l_c_d_8h_a2bf3f71562ffc03900df74a12e874f61}{}\label{_l_c_d_8h_a2bf3f71562ffc03900df74a12e874f61} 
+\index{L\+C\+D.\+h@{L\+C\+D.\+h}!L\+C\+D\+\_\+vid\+Send\+String@{L\+C\+D\+\_\+vid\+Send\+String}}
+\index{L\+C\+D\+\_\+vid\+Send\+String@{L\+C\+D\+\_\+vid\+Send\+String}!L\+C\+D.\+h@{L\+C\+D.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+\_\+vid\+Send\+String()}{LCD\_vidSendString()}}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+vid\+Send\+String (\begin{DoxyParamCaption}\item[{uint8 $\ast$}]{string,  }\item[{uint8}]{index }\end{DoxyParamCaption})}
+
+
+
+print string of character 
+
+function to send string to show it to lcd by using L\+C\+D\+\_\+vid\+Send\+Char function and string as array of char
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & the array wanted to prin \\
+\hline
+{\em index} & the length of characters must be print from array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Should not return 
+\end{DoxyReturn}
+\hypertarget{_l_c_d_8h_af452ea4953741c1f67a5777a59d6c75c}{}\label{_l_c_d_8h_af452ea4953741c1f67a5777a59d6c75c} 
+\index{L\+C\+D.\+h@{L\+C\+D.\+h}!L\+C\+D\+\_\+vid\+Sind\+Extra\+Char@{L\+C\+D\+\_\+vid\+Sind\+Extra\+Char}}
+\index{L\+C\+D\+\_\+vid\+Sind\+Extra\+Char@{L\+C\+D\+\_\+vid\+Sind\+Extra\+Char}!L\+C\+D.\+h@{L\+C\+D.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+D\+\_\+vid\+Sind\+Extra\+Char()}{LCD\_vidSindExtraChar()}}
+{\footnotesize\ttfamily void L\+C\+D\+\_\+vid\+Sind\+Extra\+Char (\begin{DoxyParamCaption}\item[{uint8}]{X,  }\item[{uint8}]{Y }\end{DoxyParamCaption})}
+
+
+
+print one character 
+
+function to save and show extra string to show it to lcd by using L\+C\+D\+\_\+vid\+Send\+Char function and Extra\+\_\+char array
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the number of row wanted to print in \\
+\hline
+{\em y} & the number of column wanted to print in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Should not return 
+\end{DoxyReturn}

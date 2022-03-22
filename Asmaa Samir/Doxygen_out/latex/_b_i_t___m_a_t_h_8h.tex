@@ -1,0 +1,112 @@
+\hypertarget{_b_i_t___m_a_t_h_8h}{}\section{Doxegen\+\_\+working\+\_\+\+Dir/\+B\+I\+T\+\_\+\+M\+A\+TH.h File Reference}
+\label{_b_i_t___m_a_t_h_8h}\index{Doxegen\+\_\+working\+\_\+\+Dir/\+B\+I\+T\+\_\+\+M\+A\+T\+H.\+h@{Doxegen\+\_\+working\+\_\+\+Dir/\+B\+I\+T\+\_\+\+M\+A\+T\+H.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_b_i_t___m_a_t_h_8h_a3200003994c560bf8896fa2e9041f8b2}{T\+O\+G\+G\+L\+E\+\_\+\+B\+IT}(V\+AR,  B\+I\+T\+NO)~V\+AR$^\wedge$=(1$<$$<$B\+I\+T\+NO)
+\begin{DoxyCompactList}\small\item\em change value of bit \end{DoxyCompactList}\item 
+\#define \hyperlink{_b_i_t___m_a_t_h_8h_ac95a932de475c100e940e94fab118117}{C\+L\+R\+\_\+\+B\+IT}(V\+AR,  B\+I\+T\+NO)~V\+AR\&=($\sim$(1$<$$<$B\+I\+T\+NO))
+\begin{DoxyCompactList}\small\item\em put zero \end{DoxyCompactList}\item 
+\#define \hyperlink{_b_i_t___m_a_t_h_8h_ad181e3acfba751fd69912c9fba490766}{S\+E\+T\+\_\+\+B\+IT}(V\+AR,  B\+I\+T\+NO)~V\+AR$\vert$=(1$<$$<$B\+I\+T\+NO)
+\begin{DoxyCompactList}\small\item\em put one \end{DoxyCompactList}\item 
+\#define \hyperlink{_b_i_t___m_a_t_h_8h_a81bd1157353c800a700170ed89141b79}{G\+E\+T\+\_\+\+B\+IT}(V\+AR,  B\+I\+T\+NO)~(((V\+AR) $>$$>$ (B\+I\+T\+NO)) \& 0x01)
+\begin{DoxyCompactList}\small\item\em know value of bit \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+macros for defining all math functions used on bit operations
+
+Created on\+: 14/01/2022 \begin{DoxyAuthor}{Author}
+Asmaa\+Samir 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_b_i_t___m_a_t_h_8h_ac95a932de475c100e940e94fab118117}{}\label{_b_i_t___m_a_t_h_8h_ac95a932de475c100e940e94fab118117} 
+\index{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h@{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h}!C\+L\+R\+\_\+\+B\+IT@{C\+L\+R\+\_\+\+B\+IT}}
+\index{C\+L\+R\+\_\+\+B\+IT@{C\+L\+R\+\_\+\+B\+IT}!B\+I\+T\+\_\+\+M\+A\+T\+H.\+h@{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h}}
+\subsubsection{\texorpdfstring{C\+L\+R\+\_\+\+B\+IT}{CLR\_BIT}}
+{\footnotesize\ttfamily \#define C\+L\+R\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{V\+AR,  }\item[{}]{B\+I\+T\+NO }\end{DoxyParamCaption})~V\+AR\&=($\sim$(1$<$$<$B\+I\+T\+NO))}
+
+
+
+put zero 
+
+function to clear a bit or to set a bit with value=0. function take the register and number of bits from 0 to 7.
+
+
+\begin{DoxyParams}{Parameters}
+{\em V\+AR} & variable that need to change the bit on it \\
+\hline
+{\em B\+I\+T\+NO} & the number of bit in the variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Should not return 
+\end{DoxyReturn}
+\hypertarget{_b_i_t___m_a_t_h_8h_a81bd1157353c800a700170ed89141b79}{}\label{_b_i_t___m_a_t_h_8h_a81bd1157353c800a700170ed89141b79} 
+\index{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h@{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h}!G\+E\+T\+\_\+\+B\+IT@{G\+E\+T\+\_\+\+B\+IT}}
+\index{G\+E\+T\+\_\+\+B\+IT@{G\+E\+T\+\_\+\+B\+IT}!B\+I\+T\+\_\+\+M\+A\+T\+H.\+h@{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h}}
+\subsubsection{\texorpdfstring{G\+E\+T\+\_\+\+B\+IT}{GET\_BIT}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{V\+AR,  }\item[{}]{B\+I\+T\+NO }\end{DoxyParamCaption})~(((V\+AR) $>$$>$ (B\+I\+T\+NO)) \& 0x01)}
+
+
+
+know value of bit 
+
+function to get the value of the specificity in the register. function takes the register and number of bits from 0 to 7.
+
+
+\begin{DoxyParams}{Parameters}
+{\em V\+AR} & variable that need to change the bit on it \\
+\hline
+{\em B\+I\+T\+NO} & the number of bit in the variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Should not return 
+\end{DoxyReturn}
+\hypertarget{_b_i_t___m_a_t_h_8h_ad181e3acfba751fd69912c9fba490766}{}\label{_b_i_t___m_a_t_h_8h_ad181e3acfba751fd69912c9fba490766} 
+\index{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h@{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h}!S\+E\+T\+\_\+\+B\+IT@{S\+E\+T\+\_\+\+B\+IT}}
+\index{S\+E\+T\+\_\+\+B\+IT@{S\+E\+T\+\_\+\+B\+IT}!B\+I\+T\+\_\+\+M\+A\+T\+H.\+h@{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+T\+\_\+\+B\+IT}{SET\_BIT}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{V\+AR,  }\item[{}]{B\+I\+T\+NO }\end{DoxyParamCaption})~V\+AR$\vert$=(1$<$$<$B\+I\+T\+NO)}
+
+
+
+put one 
+
+function to set the value of bit by 1. function takes the register and number bits a bit from 0 to 7.
+
+
+\begin{DoxyParams}{Parameters}
+{\em V\+AR} & variable that need to change the bit on it \\
+\hline
+{\em B\+I\+T\+NO} & the number of bit in the variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Should not return 
+\end{DoxyReturn}
+\hypertarget{_b_i_t___m_a_t_h_8h_a3200003994c560bf8896fa2e9041f8b2}{}\label{_b_i_t___m_a_t_h_8h_a3200003994c560bf8896fa2e9041f8b2} 
+\index{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h@{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h}!T\+O\+G\+G\+L\+E\+\_\+\+B\+IT@{T\+O\+G\+G\+L\+E\+\_\+\+B\+IT}}
+\index{T\+O\+G\+G\+L\+E\+\_\+\+B\+IT@{T\+O\+G\+G\+L\+E\+\_\+\+B\+IT}!B\+I\+T\+\_\+\+M\+A\+T\+H.\+h@{B\+I\+T\+\_\+\+M\+A\+T\+H.\+h}}
+\subsubsection{\texorpdfstring{T\+O\+G\+G\+L\+E\+\_\+\+B\+IT}{TOGGLE\_BIT}}
+{\footnotesize\ttfamily \#define T\+O\+G\+G\+L\+E\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{V\+AR,  }\item[{}]{B\+I\+T\+NO }\end{DoxyParamCaption})~V\+AR$^\wedge$=(1$<$$<$B\+I\+T\+NO)}
+
+
+
+change value of bit 
+
+function to toggle bit from 1 to 0 and from 0 to 1. function takes the register and number of bits from 0 to 7.
+
+
+\begin{DoxyParams}{Parameters}
+{\em V\+AR} & variable that need to change the bit on it \\
+\hline
+{\em B\+I\+T\+NO} & the number of bit in the variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Should not return 
+\end{DoxyReturn}

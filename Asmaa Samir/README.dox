@@ -1,0 +1,14 @@
+/**
+
+@mainpage LCD display test Project
+
+@author Asmaa Samir.
+
+2x16 LCD display whice print any charcter , number and symbole that defines in ASCII table.
+we make a project to test the display by making functions like 
+1. send command to make LCD take spacific action.
+2. send char to print any character by giving it the hex value in ASCII table.
+3. send string to print a long sentaces
+4. send extra string if you need to define some  character out of ASCII table.
+
+*/
