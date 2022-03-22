@@ -1,8 +1,0 @@
-<map id="DIO.c" name="DIO.c">
-<area shape="rect" id="node1" title="this is digital input output module" alt="" coords="123,5,181,32"/>
-<area shape="rect" id="node2" href="$STD__MEMORY__MAP_8h_source.html" title=" " alt="" coords="5,80,165,107"/>
-<area shape="rect" id="node5" href="$DIO_8h.html" title="this is digital input output module" alt="" coords="189,80,248,107"/>
-<area shape="rect" id="node3" href="$STD__TYPES_8h_source.html" title=" " alt="" coords="157,155,264,181"/>
-<area shape="rect" id="node4" href="$STD__BITS_8h_source.html" title=" " alt="" coords="37,155,133,181"/>
-<area shape="rect" id="node6" href="$DIO__CFG_8h.html" title="this digital input output module configuration used to configure mcu pins as input or output" alt="" coords="289,155,381,181"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="TMR0.h" name="TMR0.h">
-<area shape="rect" id="node1" title="this is timer0 module" alt="" coords="115,5,185,32"/>
-<area shape="rect" id="node2" href="$CO__SCH_8h.html" title="co&#45;operatine schduler used to handle tasks" alt="" coords="56,80,143,107"/>
-<area shape="rect" id="node5" href="$TMR0_8c.html" title="this is timer0 module" alt="" coords="167,80,237,107"/>
-<area shape="rect" id="node3" href="$CO__SCH_8c.html" title="co&#45;operatine schduler used to handle tasks" alt="" coords="5,155,92,181"/>
-<area shape="rect" id="node4" href="$main_8c.html" title="this is counter project counts from 0 to 99 every one second" alt="" coords="117,155,183,181"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="CO_SCH.h" name="CO_SCH.h">
-<area shape="rect" id="node1" title="co&#45;operatine schduler used to handle tasks" alt="" coords="66,5,153,32"/>
-<area shape="rect" id="node2" href="$STD__TYPES_8h_source.html" title=" " alt="" coords="5,229,112,256"/>
-<area shape="rect" id="node3" href="$STD__MEMORY__MAP_8h_source.html" title=" " alt="" coords="99,155,259,181"/>
-<area shape="rect" id="node5" href="$TMR0_8h.html" title="this is timer0 module" alt="" coords="147,80,218,107"/>
-<area shape="rect" id="node4" href="$STD__BITS_8h_source.html" title=" " alt="" coords="136,229,232,256"/>
-</map>

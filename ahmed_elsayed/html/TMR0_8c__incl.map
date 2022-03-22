@@ -1,7 +1,0 @@
-<map id="TMR0.c" name="TMR0.c">
-<area shape="rect" id="node1" title="this is timer0 module" alt="" coords="86,5,157,32"/>
-<area shape="rect" id="node2" href="$TMR0_8h.html" title="this is timer0 module" alt="" coords="86,80,157,107"/>
-<area shape="rect" id="node3" href="$STD__MEMORY__MAP_8h_source.html" title=" " alt="" coords="41,155,201,181"/>
-<area shape="rect" id="node4" href="$STD__TYPES_8h_source.html" title=" " alt="" coords="5,229,112,256"/>
-<area shape="rect" id="node5" href="$STD__BITS_8h_source.html" title=" " alt="" coords="136,229,232,256"/>
-</map>

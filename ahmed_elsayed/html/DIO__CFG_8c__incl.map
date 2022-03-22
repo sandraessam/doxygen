@@ -1,5 +1,0 @@
-<map id="DIO_CFG.c" name="DIO_CFG.c">
-<area shape="rect" id="node1" title="this digital input output module configuration used to configure mcu pins as input or output" alt="" coords="75,5,165,32"/>
-<area shape="rect" id="node2" href="$STD__TYPES_8h_source.html" title=" " alt="" coords="5,80,112,107"/>
-<area shape="rect" id="node3" href="$DIO__CFG_8h.html" title="this digital input output module configuration used to configure mcu pins as input or output" alt="" coords="137,80,229,107"/>
-</map>
