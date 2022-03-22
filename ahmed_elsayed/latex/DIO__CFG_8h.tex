@@ -1,0 +1,106 @@
+\hypertarget{DIO__CFG_8h}{}\doxysection{DIO\+\_\+\+CFG.\+h File Reference}
+\label{DIO__CFG_8h}\index{DIO\_CFG.h@{DIO\_CFG.h}}
+
+
+this digital input output module configuration used to configure mcu pins as input or output  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{DIO__CFG_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{DIO__CFG_8h_aebea35aaed81eedf0f91a52e5a13f3fb}\label{DIO__CFG_8h_aebea35aaed81eedf0f91a52e5a13f3fb}} 
+enum \mbox{\hyperlink{DIO__CFG_8h_aebea35aaed81eedf0f91a52e5a13f3fb}{DIO\+\_\+\+PIN\+\_\+\+ID\+\_\+t}} \{ \newline
+{\bfseries DIO\+\_\+\+PINA0} = 0
+, {\bfseries DIO\+\_\+\+PINA1}
+, {\bfseries DIO\+\_\+\+PINA2}
+, {\bfseries DIO\+\_\+\+PINA3}
+, \newline
+{\bfseries DIO\+\_\+\+PINA4}
+, {\bfseries DIO\+\_\+\+PINA5}
+, {\bfseries DIO\+\_\+\+PINA6}
+, {\bfseries DIO\+\_\+\+PINA7}
+, \newline
+{\bfseries DIO\+\_\+\+PINB0}
+, {\bfseries DIO\+\_\+\+PINB1}
+, {\bfseries DIO\+\_\+\+PINB2}
+, {\bfseries DIO\+\_\+\+PINB3}
+, \newline
+{\bfseries DIO\+\_\+\+PINB4}
+, {\bfseries DIO\+\_\+\+PINB5}
+, {\bfseries DIO\+\_\+\+PINB6}
+, {\bfseries DIO\+\_\+\+PINB7}
+, \newline
+{\bfseries DIO\+\_\+\+PINC0}
+, {\bfseries DIO\+\_\+\+PINC1}
+, {\bfseries DIO\+\_\+\+PINC2}
+, {\bfseries DIO\+\_\+\+PINC3}
+, \newline
+{\bfseries DIO\+\_\+\+PINC4}
+, {\bfseries DIO\+\_\+\+PINC5}
+, {\bfseries DIO\+\_\+\+PINC6}
+, {\bfseries DIO\+\_\+\+PINC7}
+, \newline
+{\bfseries DIO\+\_\+\+PIND0}
+, {\bfseries DIO\+\_\+\+PIND1}
+, {\bfseries DIO\+\_\+\+PIND2}
+, {\bfseries DIO\+\_\+\+PIND3}
+, \newline
+{\bfseries DIO\+\_\+\+PIND4}
+, {\bfseries DIO\+\_\+\+PIND5}
+, {\bfseries DIO\+\_\+\+PIND6}
+, {\bfseries DIO\+\_\+\+PIND7}
+, \newline
+{\bfseries DIO\+\_\+\+MAX\+\_\+\+PINS}
+ \}
+\begin{DoxyCompactList}\small\item\em create new data type for mcu pins \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{DIO__CFG_8h_a1fe756a164a47be1ab81d3eaddb73411}\label{DIO__CFG_8h_a1fe756a164a47be1ab81d3eaddb73411}} 
+enum \mbox{\hyperlink{DIO__CFG_8h_a1fe756a164a47be1ab81d3eaddb73411}{DIO\+\_\+\+PIN\+\_\+\+DIRECTION\+\_\+t}} \{ {\bfseries DIO\+\_\+\+PIN\+\_\+\+DIRECTION\+\_\+\+INPUT\+\_\+\+PULL\+\_\+\+UP} = 0
+, {\bfseries DIO\+\_\+\+PIN\+\_\+\+DIRECTION\+\_\+\+OUTPUT}
+, {\bfseries DIO\+\_\+\+PIN\+\_\+\+DIRECTION\+\_\+\+INPUT\+\_\+\+FLOAT}
+ \}
+\begin{DoxyCompactList}\small\item\em create new data type pins directions \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{DIO__CFG_8h_ad40a012484cec4c49c23af77c8201599}\label{DIO__CFG_8h_ad40a012484cec4c49c23af77c8201599}} 
+enum \mbox{\hyperlink{DIO__CFG_8h_ad40a012484cec4c49c23af77c8201599}{DIO\+\_\+\+PORT\+\_\+\+ID\+\_\+t}} \{ \newline
+{\bfseries DIO\+\_\+\+PORTA} = 0
+, {\bfseries DIO\+\_\+\+PORTB}
+, {\bfseries DIO\+\_\+\+PORTC}
+, {\bfseries DIO\+\_\+\+PORTD}
+, \newline
+{\bfseries DIO\+\_\+\+MAX\+\_\+\+PORTS}
+ \}
+\begin{DoxyCompactList}\small\item\em create new data type for mcu port \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{DIO__CFG_8h_a04d59be4e73fc0f7b8c0879fa4591326}\label{DIO__CFG_8h_a04d59be4e73fc0f7b8c0879fa4591326}} 
+enum \mbox{\hyperlink{DIO__CFG_8h_a04d59be4e73fc0f7b8c0879fa4591326}{DIO\+\_\+\+PIN\+\_\+\+STATE\+\_\+t}} \{ {\bfseries DIO\+\_\+\+PIN\+\_\+\+STATE\+\_\+\+LOW} = 0
+, {\bfseries DIO\+\_\+\+PIN\+\_\+\+STATE\+\_\+\+HIGH}
+ \}
+\begin{DoxyCompactList}\small\item\em create new data type for mcu pins states \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{DIO__CFG_8h_ab72c865bab71bf413c7d8d7d1898b542}\label{DIO__CFG_8h_ab72c865bab71bf413c7d8d7d1898b542}} 
+\mbox{\hyperlink{DIO__CFG_8h_a1fe756a164a47be1ab81d3eaddb73411}{DIO\+\_\+\+PIN\+\_\+\+DIRECTION\+\_\+t}} \mbox{\hyperlink{DIO__CFG_8h_ab72c865bab71bf413c7d8d7d1898b542}{Pin\+\_\+\+Direction}} \mbox{[}DIO\+\_\+\+MAX\+\_\+\+PINS\mbox{]}
+\begin{DoxyCompactList}\small\item\em this array used to inite mcu pins dirctions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this digital input output module configuration used to configure mcu pins as input or output 
+
+\begin{DoxyAuthor}{Author}
+your name (\href{mailto:elbanawiahmed@gmail.com}{\texttt{ elbanawiahmed@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/03-\/20
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
