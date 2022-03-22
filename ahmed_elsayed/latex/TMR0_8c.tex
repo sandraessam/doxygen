@@ -1,0 +1,148 @@
+\hypertarget{TMR0_8c}{}\doxysection{TMR0.\+c File Reference}
+\label{TMR0_8c}\index{TMR0.c@{TMR0.c}}
+
+
+this is timer0 module  
+
+
+{\ttfamily \#include \char`\"{}TMR0.\+h\char`\"{}}\newline
+Include dependency graph for TMR0.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{TMR0_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{TMR0_8c_a44a76c82c549f99e8078d7bcc16ed794}{TMR0\+\_\+\+Set\+\_\+\+Prescaler}} (const \mbox{\hyperlink{TMR0_8h_a57c47374f96bd13072ec88444965c04e}{TMR0\+\_\+\+PRESCALER\+\_\+t}} PRESCALER)
+\begin{DoxyCompactList}\small\item\em this function used to define timer0 prescaler \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{TMR0_8c_ac5c4f0400f5fad0b748ddde1cc399c07}{TMR0\+\_\+\+Mode}} (const \mbox{\hyperlink{TMR0_8h_aecff1a40233fe09b757796f0b53f7e41}{TMR0\+\_\+\+MODE\+\_\+t}} MODE)
+\begin{DoxyCompactList}\small\item\em this function used to define timer0 modes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{TMR0_8c_a469e63f533e477f354c907b53bafb953}\label{TMR0_8c_a469e63f533e477f354c907b53bafb953}} 
+void \mbox{\hyperlink{TMR0_8c_a469e63f533e477f354c907b53bafb953}{TMR0\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em this function used to inite timer0 and inite both OCR0 and TCNT0 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{TMR0_8c_a8a1c2581382338d029506d6edc942978}{TMR0\+\_\+\+INT}} (const \mbox{\hyperlink{TMR0_8h_a15f84199fbd89eaaf085db54d2cae492}{TMR0\+\_\+\+INT\+\_\+t}} INT)
+\begin{DoxyCompactList}\small\item\em this function used to enable or disable timer0 interrupt \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{TMR0_8c_a3a8ac973f49a65368c3d7970fd013fd4}{TMR0\+\_\+\+OC0}} (const \mbox{\hyperlink{TMR0_8h_a2c800a209d751830c495d9254c1cba88}{TMR0\+\_\+\+OC0\+\_\+t}} STATE)
+\begin{DoxyCompactList}\small\item\em this function used to define output compare match modes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{TMR0_8c_a339056babf3336d7e9f5483919fff8da}{TMR0\+\_\+\+Set\+\_\+\+Buffer}} (const \mbox{\hyperlink{TMR0_8h_af0e5338db7d02c2c2e5c3ff1e9bc0c72}{TMR0\+\_\+\+BFF\+\_\+t}} BUFFER, const UINT8\+\_\+t VALUE)
+\begin{DoxyCompactList}\small\item\em this function used to init timer0 buffers \end{DoxyCompactList}\item 
+UINT8\+\_\+t \mbox{\hyperlink{TMR0_8c_aa4db32c7f224f4e9c9f3b4dd6b2bc70b}{TMR0\+\_\+\+Read\+\_\+\+Buffer}} (const \mbox{\hyperlink{TMR0_8h_af0e5338db7d02c2c2e5c3ff1e9bc0c72}{TMR0\+\_\+\+BFF\+\_\+t}} BUFFER)
+\begin{DoxyCompactList}\small\item\em this function used to read timer0 buffers \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this is timer0 module 
+
+\begin{DoxyAuthor}{Author}
+ahmed elsayed (\href{mailto:elbanawiahmed@gmail.com}{\texttt{ elbanawiahmed@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/03-\/19
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{TMR0_8c_a8a1c2581382338d029506d6edc942978}\label{TMR0_8c_a8a1c2581382338d029506d6edc942978}} 
+\index{TMR0.c@{TMR0.c}!TMR0\_INT@{TMR0\_INT}}
+\index{TMR0\_INT@{TMR0\_INT}!TMR0.c@{TMR0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_INT()}{TMR0\_INT()}}
+{\footnotesize\ttfamily void TMR0\+\_\+\+INT (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TMR0_8h_a15f84199fbd89eaaf085db54d2cae492}{TMR0\+\_\+\+INT\+\_\+t}}}]{INT }\end{DoxyParamCaption})}
+
+
+
+this function used to enable or disable timer0 interrupt 
+
+
+\begin{DoxyParams}{Parameters}
+{\em INT} & this value can be\+: TMR0\+\_\+\+OV\+\_\+\+INT\+\_\+\+ENABLE TMR0\+\_\+\+OV\+\_\+\+INT\+\_\+\+DISABLE TMR0\+\_\+\+OC\+\_\+\+INT\+\_\+\+ENABLE TMR0\+\_\+\+OC\+\_\+\+INT\+\_\+\+DISABLE \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{TMR0_8c_ac5c4f0400f5fad0b748ddde1cc399c07}\label{TMR0_8c_ac5c4f0400f5fad0b748ddde1cc399c07}} 
+\index{TMR0.c@{TMR0.c}!TMR0\_Mode@{TMR0\_Mode}}
+\index{TMR0\_Mode@{TMR0\_Mode}!TMR0.c@{TMR0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_Mode()}{TMR0\_Mode()}}
+{\footnotesize\ttfamily void TMR0\+\_\+\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TMR0_8h_aecff1a40233fe09b757796f0b53f7e41}{TMR0\+\_\+\+MODE\+\_\+t}}}]{MODE }\end{DoxyParamCaption})}
+
+
+
+this function used to define timer0 modes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em MODE} & this value can be\+: TMR0\+\_\+\+NORMAL TMR0\+\_\+\+PWM TMR0\+\_\+\+CTC TMR0\+\_\+\+FAST\+\_\+\+PWM \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{TMR0_8c_a3a8ac973f49a65368c3d7970fd013fd4}\label{TMR0_8c_a3a8ac973f49a65368c3d7970fd013fd4}} 
+\index{TMR0.c@{TMR0.c}!TMR0\_OC0@{TMR0\_OC0}}
+\index{TMR0\_OC0@{TMR0\_OC0}!TMR0.c@{TMR0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_OC0()}{TMR0\_OC0()}}
+{\footnotesize\ttfamily void TMR0\+\_\+\+OC0 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TMR0_8h_a2c800a209d751830c495d9254c1cba88}{TMR0\+\_\+\+OC0\+\_\+t}}}]{STATE }\end{DoxyParamCaption})}
+
+
+
+this function used to define output compare match modes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em STATE} & this value can be\+: OC0\+\_\+\+DISABLE OC0\+\_\+\+TOGGLE OC0\+\_\+\+CLEAR OC0\+\_\+\+SET \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{TMR0_8c_aa4db32c7f224f4e9c9f3b4dd6b2bc70b}\label{TMR0_8c_aa4db32c7f224f4e9c9f3b4dd6b2bc70b}} 
+\index{TMR0.c@{TMR0.c}!TMR0\_Read\_Buffer@{TMR0\_Read\_Buffer}}
+\index{TMR0\_Read\_Buffer@{TMR0\_Read\_Buffer}!TMR0.c@{TMR0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_Read\_Buffer()}{TMR0\_Read\_Buffer()}}
+{\footnotesize\ttfamily UINT8\+\_\+t TMR0\+\_\+\+Read\+\_\+\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TMR0_8h_af0e5338db7d02c2c2e5c3ff1e9bc0c72}{TMR0\+\_\+\+BFF\+\_\+t}}}]{BUFFER }\end{DoxyParamCaption})}
+
+
+
+this function used to read timer0 buffers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em BUFFER} & this value can be\+: TMR0\+\_\+\+TCNTR TMR0\+\_\+\+OCR \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+UINT8\+\_\+t this value from 0 to 255 
+\end{DoxyReturn}
+\mbox{\Hypertarget{TMR0_8c_a339056babf3336d7e9f5483919fff8da}\label{TMR0_8c_a339056babf3336d7e9f5483919fff8da}} 
+\index{TMR0.c@{TMR0.c}!TMR0\_Set\_Buffer@{TMR0\_Set\_Buffer}}
+\index{TMR0\_Set\_Buffer@{TMR0\_Set\_Buffer}!TMR0.c@{TMR0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_Set\_Buffer()}{TMR0\_Set\_Buffer()}}
+{\footnotesize\ttfamily void TMR0\+\_\+\+Set\+\_\+\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TMR0_8h_af0e5338db7d02c2c2e5c3ff1e9bc0c72}{TMR0\+\_\+\+BFF\+\_\+t}}}]{BUFFER,  }\item[{const UINT8\+\_\+t}]{VALUE }\end{DoxyParamCaption})}
+
+
+
+this function used to init timer0 buffers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em BUFFER} & this value can be\+: TMR0\+\_\+\+TCNTR TMR0\+\_\+\+OCR \\
+\hline
+{\em VALUE} & this value from 0 to 255 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{TMR0_8c_a44a76c82c549f99e8078d7bcc16ed794}\label{TMR0_8c_a44a76c82c549f99e8078d7bcc16ed794}} 
+\index{TMR0.c@{TMR0.c}!TMR0\_Set\_Prescaler@{TMR0\_Set\_Prescaler}}
+\index{TMR0\_Set\_Prescaler@{TMR0\_Set\_Prescaler}!TMR0.c@{TMR0.c}}
+\doxysubsubsection{\texorpdfstring{TMR0\_Set\_Prescaler()}{TMR0\_Set\_Prescaler()}}
+{\footnotesize\ttfamily void TMR0\+\_\+\+Set\+\_\+\+Prescaler (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{TMR0_8h_a57c47374f96bd13072ec88444965c04e}{TMR0\+\_\+\+PRESCALER\+\_\+t}}}]{PRESCALER }\end{DoxyParamCaption})}
+
+
+
+this function used to define timer0 prescaler 
+
+
+\begin{DoxyParams}{Parameters}
+{\em PRESCALER} & this value can be\+: TMR0\+\_\+\+NO\+\_\+\+CLK TMR0\+\_\+\+DF1 TMR0\+\_\+\+DF8 TMR0\+\_\+\+DF64 TMR0\+\_\+\+DF256 TMR0\+\_\+\+DF1024 TMR0\+\_\+\+EXT\+\_\+\+CLK\+\_\+\+FALLING\+\_\+\+EDGE TMR0\+\_\+\+EXT\+\_\+\+CLK\+\_\+\+RISING\+\_\+\+EDGE \\
+\hline
+\end{DoxyParams}
