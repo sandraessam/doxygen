@@ -1,0 +1,105 @@
+\hypertarget{CO__SCH_8c}{}\doxysection{CO\+\_\+\+SCH.\+c File Reference}
+\label{CO__SCH_8c}\index{CO\_SCH.c@{CO\_SCH.c}}
+
+
+co-\/operatine schduler used to handle tasks  
+
+
+{\ttfamily \#include \char`\"{}CO\+\_\+\+SCH.\+h\char`\"{}}\newline
+Include dependency graph for CO\+\_\+\+SCH.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{CO__SCH_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structTASK__t}{TASK\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em creating a new data type to express task characterstics \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{CO__SCH_8c_a89b547ee4b78adc78eeec12b60464c0c}\label{CO__SCH_8c_a89b547ee4b78adc78eeec12b60464c0c}} 
+\#define {\bfseries ENDED}~0
+\item 
+\mbox{\Hypertarget{CO__SCH_8c_a7dea6a57bebd3e8c236b37a0319da301}\label{CO__SCH_8c_a7dea6a57bebd3e8c236b37a0319da301}} 
+\#define \mbox{\hyperlink{CO__SCH_8c_a7dea6a57bebd3e8c236b37a0319da301}{TMR\+\_\+\+INT\+\_\+\+CYCLE}}~39
+\begin{DoxyCompactList}\small\item\em this macro used to mapping tick time\+: example\+: 39 == mapped to tick= 5m \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{CO__SCH_8c_a3f4dac478a0024f5a592d592a9c690e9}{CO\+\_\+\+SCH\+\_\+\+Delete\+\_\+\+Task}} (const UINT8\+\_\+t ID)
+\begin{DoxyCompactList}\small\item\em this function used to delete the required task \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CO__SCH_8c_a36188f13804c2cd8ab5a3a3425c82b12}\label{CO__SCH_8c_a36188f13804c2cd8ab5a3a3425c82b12}} 
+void \mbox{\hyperlink{CO__SCH_8c_a36188f13804c2cd8ab5a3a3425c82b12}{CO\+\_\+\+SCH\+\_\+\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em this function used to inite timer,interrupt and the schduler \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{CO__SCH_8c_ad02d1f77fbb402299eede184ff07cd45}{CO\+\_\+\+SCH\+\_\+\+Add\+\_\+\+Task}} (void($\ast$const PTASK)(void), const UINT8\+\_\+t DELAY, const UINT8\+\_\+t PERIOD)
+\begin{DoxyCompactList}\small\item\em this function used add tasks to the schduler \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CO__SCH_8c_ab21bfc0d73698ac86c4c7258eaaa3e49}\label{CO__SCH_8c_ab21bfc0d73698ac86c4c7258eaaa3e49}} 
+void \mbox{\hyperlink{CO__SCH_8c_ab21bfc0d73698ac86c4c7258eaaa3e49}{CO\+\_\+\+SCH\+\_\+\+Dispatch\+\_\+\+Tasks}} (void)
+\begin{DoxyCompactList}\small\item\em this function used to dispatch tasks \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CO__SCH_8c_a4a62e01fe556629b8b7ad12036ac7dde}\label{CO__SCH_8c_a4a62e01fe556629b8b7ad12036ac7dde}} 
+void \mbox{\hyperlink{CO__SCH_8c_a4a62e01fe556629b8b7ad12036ac7dde}{CO\+\_\+\+SCH\+\_\+\+Start}} (void)
+\begin{DoxyCompactList}\small\item\em this function used to start the schduler \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CO__SCH_8c_abbef8c8f88ae3e29d01ad70f59626151}\label{CO__SCH_8c_abbef8c8f88ae3e29d01ad70f59626151}} 
+void \mbox{\hyperlink{CO__SCH_8c_abbef8c8f88ae3e29d01ad70f59626151}{CO\+\_\+\+SCH\+\_\+\+Stop}} (void)
+\begin{DoxyCompactList}\small\item\em this function used to stop the schduler \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{CO__SCH_8c_aa3fdfb7ec9172da25cf3b5f5bb49e7c6}\label{CO__SCH_8c_aa3fdfb7ec9172da25cf3b5f5bb49e7c6}} 
+\mbox{\hyperlink{CO__SCH_8c_aa3fdfb7ec9172da25cf3b5f5bb49e7c6}{ISR}} (TIMER0\+\_\+\+COMP\+\_\+\+VECT)
+\begin{DoxyCompactList}\small\item\em Construct a new ISR object to enable updating the tasks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+co-\/operatine schduler used to handle tasks 
+
+\begin{DoxyAuthor}{Author}
+ahmed elsayed (\href{mailto:elbanawiahmed@gmail.com}{\texttt{ elbanawiahmed@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/03-\/19
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{CO__SCH_8c_ad02d1f77fbb402299eede184ff07cd45}\label{CO__SCH_8c_ad02d1f77fbb402299eede184ff07cd45}} 
+\index{CO\_SCH.c@{CO\_SCH.c}!CO\_SCH\_Add\_Task@{CO\_SCH\_Add\_Task}}
+\index{CO\_SCH\_Add\_Task@{CO\_SCH\_Add\_Task}!CO\_SCH.c@{CO\_SCH.c}}
+\doxysubsubsection{\texorpdfstring{CO\_SCH\_Add\_Task()}{CO\_SCH\_Add\_Task()}}
+{\footnotesize\ttfamily void CO\+\_\+\+SCH\+\_\+\+Add\+\_\+\+Task (\begin{DoxyParamCaption}\item[{void($\ast$)(void)}]{PTASK,  }\item[{const UINT8\+\_\+t}]{DELAY,  }\item[{const UINT8\+\_\+t}]{PERIOD }\end{DoxyParamCaption})}
+
+
+
+this function used add tasks to the schduler 
+
+
+\begin{DoxyParams}{Parameters}
+{\em PTASK} & pointer to the task \\
+\hline
+{\em DELAY} & task\textquotesingle{}s delay time \\
+\hline
+{\em PERIOD} & task\textquotesingle{}s period \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{CO__SCH_8c_a3f4dac478a0024f5a592d592a9c690e9}\label{CO__SCH_8c_a3f4dac478a0024f5a592d592a9c690e9}} 
+\index{CO\_SCH.c@{CO\_SCH.c}!CO\_SCH\_Delete\_Task@{CO\_SCH\_Delete\_Task}}
+\index{CO\_SCH\_Delete\_Task@{CO\_SCH\_Delete\_Task}!CO\_SCH.c@{CO\_SCH.c}}
+\doxysubsubsection{\texorpdfstring{CO\_SCH\_Delete\_Task()}{CO\_SCH\_Delete\_Task()}}
+{\footnotesize\ttfamily void CO\+\_\+\+SCH\+\_\+\+Delete\+\_\+\+Task (\begin{DoxyParamCaption}\item[{const UINT8\+\_\+t}]{ID }\end{DoxyParamCaption})}
+
+
+
+this function used to delete the required task 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & required task id \\
+\hline
+\end{DoxyParams}

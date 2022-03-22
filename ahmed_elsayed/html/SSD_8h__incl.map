@@ -1,0 +1,7 @@
+<map id="SSD.h" name="SSD.h">
+<area shape="rect" id="node1" title="this is 7seg module" alt="" coords="154,5,214,32"/>
+<area shape="rect" id="node2" href="$DIO_8h.html" title="this is digital input output module" alt="" coords="155,80,213,107"/>
+<area shape="rect" id="node3" href="$STD__TYPES_8h_source.html" title=" " alt="" coords="5,155,112,181"/>
+<area shape="rect" id="node4" href="$STD__BITS_8h_source.html" title=" " alt="" coords="136,155,232,181"/>
+<area shape="rect" id="node5" href="$DIO__CFG_8h.html" title="this digital input output module configuration used to configure mcu pins as input or output" alt="" coords="257,155,349,181"/>
+</map>
